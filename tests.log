@@ -1,0 +1,73 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.4, pytest-8.3.2, pluggy-1.5.0 -- C:\Users\jpato\AppData\Local\Programs\Python\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: C:\GitHub\sample_python_work
+configfile: pytest.ini
+collecting ... collected 2 items
+
+tests/test_math.py::test_add 
+------------------------------- live log setup --------------------------------
+2024-08-26 12:09:09 INFO <tests.test_math> log setup
+PASSED                                                                   [ 50%]
+------------------------------ live log teardown ------------------------------
+2024-08-26 12:09:09 INFO <tests.test_math> log teardown
+
+tests/test_math.py::test_divide_zero 
+------------------------------- live log setup --------------------------------
+2024-08-26 12:09:09 INFO <tests.test_math> log setup
+FAILED                                                                   [100%]
+------------------------------ live log teardown ------------------------------
+2024-08-26 12:09:09 INFO <tests.test_math> log teardown
+
+
+================================== FAILURES ===================================
+______________________________ test_divide_zero _______________________________
+
+value_1 = 100, value_2 = 0
+
+    @ staticmethod
+    def divide(value_1, value_2):
+        try:
+>           return value_1 / value_2
+E           ZeroDivisionError: division by zero
+
+scr\basic_math_utilities.py:23: ZeroDivisionError
+
+During handling of the above exception, another exception occurred:
+
+value_01 = 100, value_02 = 0
+
+    def test_divide_zero(value_01, value_02):
+>       assert BasicMathUtilities.divide(value_01, value_02)
+
+C:\stuff\code\python\packages\pythonSamples\tests\test_math.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value_1 = 100, value_2 = 0
+
+    @ staticmethod
+    def divide(value_1, value_2):
+        try:
+            return value_1 / value_2
+        except ZeroDivisionError:
+>           raise ZeroDivisionError("Division by zero")
+E           ZeroDivisionError: Division by zero
+
+scr\basic_math_utilities.py:25: ZeroDivisionError
+----------------------------- Captured log setup ------------------------------
+2024-08-26 12:09:09 INFO <tests.test_math> log setup
+---------------------------- Captured log teardown ----------------------------
+2024-08-26 12:09:09 INFO <tests.test_math> log teardown
+============================== warnings summary ===============================
+tests\__init__.py:1
+  C:\GitHub\sample_python_work\tests\__init__.py:1: DeprecationWarning: invalid escape sequence '\s'
+    """
+
+scr\basic_math_utilities.py:1
+  C:\GitHub\sample_python_work\scr\basic_math_utilities.py:1: DeprecationWarning: invalid escape sequence '\s'
+    """
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_math.py::test_divide_zero - ZeroDivisionError: Division by ...
+=================== 1 failed, 1 passed, 2 warnings in 0.10s ===================
