@@ -196,6 +196,6 @@ class DrawFolderStructure:
 
             folder_index += 1
 
-
+# update to local folder
 path = 'C:\\temp\\folder_deep'
 DrawFolderStructure(path)
