@@ -77,4 +77,6 @@ and the contents of the folder ...\GitHub\sample_python_work\tests for the tests
 output will be written to the cmd line 
 
 <cmd line for more verbose tests and to write to disk ...\GitHub\sample_python_work\tests.log>
->>>C:\GitHub\sample_python_work>pytest -v > tests.logs
+'''
+	C:\GitHub\sample_python_work>pytest -v > tests.logs
+'''
