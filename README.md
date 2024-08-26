@@ -77,14 +77,14 @@ c:\GitHub\sample_python_work\scr>draw_folder_structure.py
 Tests math functions and logs to file. This uses pytest (not in the standard library) for testing and logging for...logging 
 
 **Files used:**
+
 scr/basic_math_utilities.py ...as the test case 
 
-pytest.ini ...for initializing pytest
+\GitHub\sample_python_work\pytest.ini ...for initializing pytest
 
-requirements.txt ...for the virtual env
+\GitHub\sample_python_work\requirements.txt ...for the virtual env
 
-and the contents of the folder ...\GitHub\sample_python_work\tests for the tests 
-
+\GitHub\sample_python_work\tests which contains the tests
 <br/>
 
 **To use:**
