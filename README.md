@@ -13,7 +13,6 @@ _GitHub\sample_python_work\tests_
 
 ## update_maya_menubar.py
 
-<br/>
 
 **Description:**
 Creates a new dropdown menu and adds it to maya's main window 
@@ -35,7 +34,6 @@ tool_bar = ManageToolBar()
 
 ## draw_folder_structure.py
 
-<br/>
 
 **Description:**
 Viualizes given folder structure and the files within it. 
@@ -74,7 +72,6 @@ c:\GitHub\sample_python_work\scr>draw_folder_structure.py
 
 ## unit tests
 
-<br/>
 
 **Description:**
 Tests math functions and logs to file. This uses pytest (not in the standard library) for testing and logging for...logging 
