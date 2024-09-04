@@ -1,13 +1,37 @@
 # sample_python_work
 Sample python code...some in DCC and some not
  
-3 samples:
+4 samples:
  
 _GitHub\sample_python_work\scr\update_maya_menubar.py_
+
+_C:\GitHub\sample_python_work\scr\qtuidialog_
 
 _GitHub\sample_python_work\scr\draw_folder_structure.py_
 
 _GitHub\sample_python_work\tests_
+
+<br/>
+
+## update_maya_menubar.py
+
+**Description:**
+Creates a new dropdown menu and adds it to maya's main window 
+
+<br/>
+
+**To Use:**
+1. Open maya 2025 (or a version that is compatible with python3 and pyside6)
+
+2. Open _GitHub\sample_python_work\scr\update_maya_menubar.py_ in the maya script editor
+
+3. Evaluate whole script and a new menu bar drop down will be added and populated with menu options
+
+_python from script that runs script_
+
+```
+tool_bar = ManageToolBar() 
+```
 
 <br/>
 
