@@ -3,13 +3,13 @@ Sample python code...some in DCC and some not
  
 4 samples:
  
-_GitHub\sample_python_work\scr\update_maya_menubar.py_
+_\GitHub\sample_python_work\scr\update_maya_menubar.py_
 
-_C:\GitHub\sample_python_work\scr\qtuidialog_
+_\GitHub\sample_python_work\scr\qtuidialog_
 
-_GitHub\sample_python_work\scr\draw_folder_structure.py_
+_\GitHub\sample_python_work\scr\draw_folder_structure.py_
 
-_GitHub\sample_python_work\tests_
+_\GitHub\sample_python_work\tests_
 
 <br/>
 
@@ -35,25 +35,31 @@ tool_bar = ManageToolBar()
 
 <br/>
 
-## update_maya_menubar.py
+## qtuidialog
 
 
 **Description:**
-Creates a new dropdown menu and adds it to maya's main window 
+Creates a qt window with rt click functionaity
 
 <br/>
 
 **To Use:**
 1. Open maya 2025 (or a version that is compatible with python3 and pyside6)
 
-2. Open _GitHub\sample_python_work\scr\update_maya_menubar.py_ in the maya script editor
+2. Open _\GitHub\sample_python_work\scr\qtuidialog\qt_ui_dialog.py_ in the maya script editor
 
-3. Evaluate whole script and a new menu bar drop down will be added and populated with menu options
+3. Evaluate the script
 
 _python from script that runs script_
 ```
-tool_bar = ManageToolBar() 
+qt_UI_Dialog = QtUiDialog()
+qt_UI_Dialog.run()
 ```
+
+4. after the dialog opens hit the 'Cube' or 'Camera' button to create an assets in the scene
+5. the dialog tree will be populated with an item basedc on the new asset
+6. rt click on that item to see specific action for that item
+
 <br/>
 
 ## draw_folder_structure.py
