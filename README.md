@@ -57,7 +57,7 @@ qt_UI_Dialog.run()
 ```
 
 4. after the dialog opens hit the 'Cube' or 'Camera' button to create an assets in the scene
-5. the dialog tree will be populated with an item basedc on the new asset
+5. the dialog tree will be populated with an item based on the new asset
 6. rt click on that item to see specific action for that item
 
 <br/>
